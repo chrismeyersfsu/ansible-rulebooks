@@ -1,0 +1,13 @@
+---
+- name: Chaos Monkey
+  hosts: all
+  sources:
+    - name: listen for alerts
+      ansible.eda.alertmanager:
+        host: 0.0.0.0
+        port: 8445
+  rules:
+    - name: debug
+      condition: True
+      action:
+        debug:
