@@ -4,7 +4,7 @@
   sources:
     - name: listen for alerts
       ansible.eda.alertmanager:
-        host: 0.0.0.0
+        host: host.containers.internal
         port: 8445
   rules:
     - name: debug
