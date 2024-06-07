@@ -22,7 +22,7 @@
           module_args:
             cmd: 'cat /tmp/outme.log'
 
-    - name: "read from outputted file"
+    - name: "this rule will have sql injection ' or 'a'='a"
       condition: True
       action:
         debug:
