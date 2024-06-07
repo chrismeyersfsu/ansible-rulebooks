@@ -10,7 +10,7 @@
         run_module:
           name: ansible.builtin.shell
           module_args:
-            cmd: 'echo "hello world" > /tmp/outme.log'
+            cmd: 'dkfjdljf "hello world" > /tmp/outme.log'
 
     - name: "read from outputted file"
       action:
