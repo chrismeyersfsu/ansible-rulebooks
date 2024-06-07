@@ -11,7 +11,15 @@
         run_module:
           name: ansible.builtin.shell
           module_args:
-            cmd: 'dkfjdljf "hello world" > /tmp/outme.log'
+            cmd: 'echo "hello world" > /tmp/outme.log'
+
+    - name: "output a message to file /tmp/outme.log"
+      condition: True
+      action:
+        run_module:
+          name: ansible.builtin.shell
+          module_args:
+            cmd: 'cat /tmp/outme.log'
 
     - name: "read from outputted file"
       condition: True
