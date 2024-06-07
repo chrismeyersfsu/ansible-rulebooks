@@ -6,6 +6,7 @@
         limit: 5
   rules:
     - name: "output a message to file /tmp/outme.log"
+      condition: True
       action:
         run_module:
           name: ansible.builtin.shell
@@ -13,6 +14,7 @@
             cmd: 'dkfjdljf "hello world" > /tmp/outme.log'
 
     - name: "read from outputted file"
+      condition: True
       action:
         debug:
           msg: "How would I do that?"
