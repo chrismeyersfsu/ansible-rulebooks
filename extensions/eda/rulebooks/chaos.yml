@@ -27,3 +27,9 @@
       action:
         debug:
           msg: "How would I do that?"
+
+    - name: "this rule will have sql injection ' or 'a'='a"
+      condition: True
+      action:
+        debug:
+          msg: "How would I do that?"
