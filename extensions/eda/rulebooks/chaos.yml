@@ -14,7 +14,7 @@
           module_args:
             cmd: 'echo "hello world" > /tmp/outme.log'
 
-    - name: "output a message to file /tmp/outme.log"
+    - name: "output a message to the screen"
       condition: True
       action:
         run_module:
